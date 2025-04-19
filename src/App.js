@@ -88,20 +88,6 @@ function App() {
           >
             - Start -
           </GradientText>
-          {/* <button
-            onClick={handlePlay}
-            style={{
-              padding: "1rem 2rem",
-              fontSize: "1.2rem",
-              backgroundColor: "#ff4081",
-              color: "white",
-              border: "none",
-              borderRadius: "10px",
-              cursor: "pointer",
-            }}
-          >
-            Start 🎶
-          </button> */}
         </div>
       )}
 
