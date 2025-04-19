@@ -3,6 +3,7 @@ import TrueFocus from "./components/TrueFocus/TrueFocus";
 import Stack from "./components/Stack/Stack";
 import SplashCursor from "./components/SplashCursor/SplashCursor";
 import ShinyText from "./components/ShinyText/ShinyText";
+import GradientText from "./components/GradientText/GradientText";
 import { useRef, useState } from "react";
 
 const images = [
@@ -78,7 +79,16 @@ function App() {
           <p style={{ marginBottom: "2rem" }}>
             Click the button below to start the surprise 🎉
           </p>
-          <button
+          <GradientText
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            animationSpeed={3}
+            onClick={handlePlay}
+            showBorder={true}
+            className="custom-class p-2"
+          >
+            - Start -
+          </GradientText>
+          {/* <button
             onClick={handlePlay}
             style={{
               padding: "1rem 2rem",
@@ -91,7 +101,7 @@ function App() {
             }}
           >
             Start 🎶
-          </button>
+          </button> */}
         </div>
       )}
 
